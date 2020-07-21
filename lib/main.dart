@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizzler/quiz-brain.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 void main() => runApp(Quizzler());
 
@@ -33,24 +34,42 @@ class _QuizPageState extends State<QuizPage> {
     bool correctAnswer = quizBrain.getAnswer();
     
     setState(() {
-      if (userAnswer == correctAnswer) {
-      scoreKeeper.add(
-        Icon(
-          Icons.check,
-          color: Colors.green,
-        ),
-      );
-    } else {
-      scoreKeeper.add(
-        Icon(
-          Icons.close,
-          color: Colors.red,
-        ),
-      );
-    }
-    quizBrain.updateQuestion();
+      if (quizBrain.isFinished() == true) {
+        Alert(
+          context: context,
+          type: AlertType.success,
+          title: "QUIZ FINISHED!",
+          desc: "you suck",
+          buttons: [
+            DialogButton(
+              child: Text(
+                "RESTART",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+              onPressed: () => Navigator.pop(context),
+              width: 120,
+            )
+          ],
+        ).show();
+        quizBrain.resetQuestion();
+        scoreKeeper = [];
+      } 
+      else {
+        if (userAnswer == correctAnswer) {
+          scoreKeeper.add(Icon(
+            Icons.check,
+            color: Colors.green,
+          ));
+        } else {
+          scoreKeeper.add(Icon(
+            Icons.close,
+            color: Colors.red,
+          ));
+        }
+        quizBrain.updateQuestion();
+      }
     });
-    
+  
   }
 
   @override
