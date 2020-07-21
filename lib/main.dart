@@ -37,19 +37,8 @@ class _QuizPageState extends State<QuizPage> {
       if (quizBrain.isFinished() == true) {
         Alert(
           context: context,
-          type: AlertType.success,
-          title: "QUIZ FINISHED!",
-          desc: "you suck",
-          buttons: [
-            DialogButton(
-              child: Text(
-                "RESTART",
-                style: TextStyle(color: Colors.white, fontSize: 20),
-              ),
-              onPressed: () => Navigator.pop(context),
-              width: 120,
-            )
-          ],
+          title: 'Finished!',
+          desc: 'You\'ve reached the end of the quiz.',
         ).show();
         quizBrain.resetQuestion();
         scoreKeeper = [];
