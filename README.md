@@ -19,6 +19,6 @@ This is a very simple quiz app with 13 true-or-false questions which tests your 
 ## Authors
 
 * **Angela Yu** - *Initial work* - [Angela Yu](https://github.com/angelabauer)
-* **Julia Carolina** - *Final work* - [Julia Carolina](https://github.com/juliacarolina67)
+* **Julia Amaral** - *Final work* - [Julia Amaral](https://github.com/juliaamaral67)
 
 >This is an application developed from the initial project provided by The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
