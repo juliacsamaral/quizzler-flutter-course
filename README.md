@@ -1,19 +1,24 @@
 # Quizzler ❓
 
-## Our Goal
+This is a very simple quiz app with 13 true-or-false questions which tests your general knowledge.
 
-We’re going to make a quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people to enjoy!
+![Finished Original App](https://github.com/londonappbrewery/Images/blob/master/quizzler-demo.gif)
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/quizzler-demo.gif)
+## Getting Started
 
-## What I have learnt
+- Clone this repo using git clone https://github.com/juliaamaral67/quizzler-flutter-course.git
+- Move yourself to the appropriate directory: cd quizzler-flutter-course
+- Run flutter run to start the mobile app.
 
-- Modularising your code into separate classes.
-- Dart classes and objects.
-- Using class constructors.
-- Extracting Widgets to refactor your code.
-- private and public modifiers in Dart.
-- How to use Dart lists.
-- The difference between var, const and final.
+>Note: If you choose to start the mobile app in the android emulator, you will have to start the emulator before.
 
->This is a companion project to The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+## Built With
+
+* **Flutter** - A framework developed by Google in Dart language.
+
+## Authors
+
+* **Angela Yu** - *Initial work* - [Angela Yu](https://github.com/angelabauer)
+* **Julia Carolina** - *Final work* - [Julia Carolina](https://github.com/juliacarolina67)
+
+>This is an application developed from the initial project provided by The App Brewery's Complete Flutter Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
